@@ -5,9 +5,9 @@ Auther:15443
 Data:2023/1/19
 """
 # 请输入要查询的三要素
-nameguo='xxx'  # 姓名
-cardidguo='xxx'#身份证号码
-phoneguo='xxx' #手机号
+tbd_name='xxx'  # 姓名
+tbd_idcard='xxx'#身份证号码
+tbd_phone='xxx' #手机号
 
 
 # -*- coding: utf-8 -*-
@@ -50,9 +50,9 @@ queryParams = {
 }
 # body参数（POST方法下存在）
 bodyParams = {
-    "idcard": "cardidguo",
-    "mobile": "phoneguo",
-    "name": nameguo}
+    "idcard": tbd_idcard,
+    "mobile": tbd_phone,
+    "name": tbd_name}
 # url参数拼接
 url = 'https://service-js6j2sar-1307960160.sh.apigw.tencentcs.com/release/mobile/verify'
 if len(queryParams.keys()) > 0:
