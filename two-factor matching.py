@@ -6,7 +6,7 @@ Data:2023/1/19
 """
 
 #两要素
-tbd_phone='xxx'#手机号
+tbd_idcard='xxx'#身份证号码
 tbd_realname=''#真实姓名
 
 
@@ -50,8 +50,8 @@ queryParams = {
 }
 # body参数（POST方法下存在）
 bodyParams = {
-    "cardNo": "142422200207233610",
-    "realName": "武岳膨"}
+    "cardNo": tbd_idcard,
+    "realName": tbd_realname}
 # url参数拼接
 url = 'https://service-hcgajsa5-1253495967.ap-beijing.apigateway.myqcloud.com/release/idcard/idcheckPost'
 if len(queryParams.keys()) > 0:
